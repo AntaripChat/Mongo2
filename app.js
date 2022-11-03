@@ -23,7 +23,7 @@ app.post('/',async(req,res)=>{
         name:req.body.name,
         age:req.body.age
     });
-
+    //await new monmodel.create(req.body) 
     const valu = await user.save();
     res.send(`Hi ${valu.name}, your data save`)
 });
